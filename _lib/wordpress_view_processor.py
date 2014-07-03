@@ -8,6 +8,10 @@ import requests
 
 import dateutil.parser
 
+from sheer.processors.helpers import IndexHelper
+
+index_helper = IndexHelper()
+
 def posts_at_url(url):
     
     url = os.path.expandvars(url)
@@ -33,7 +37,11 @@ def process_view(post):
     custom_fields = post['custom_fields']
 
     # limit popular posts to five items
-    popular_posts = [slug for slug in custom_fields['popular_posts'][:5]]
+    # use the slug to grab each post object so that we can use the title and
+    # permalink in the template
+    popular_posts = []
+    for slug in custom_fields['popular_posts'][:5]:
+        popular_posts.append(index_helper.get_document('posts',slug))
     post['popular_posts'] = popular_posts
 
     # convert related links into a proper list
