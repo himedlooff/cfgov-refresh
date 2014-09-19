@@ -1,0 +1,8 @@
+{
+  "name": "CFPB Leadership",
+  "query": {
+    "doc_type": "static_leadership",
+    "size": 500,
+    "sort": "date:asc"
+  }
+}

@@ -18,6 +18,7 @@
 
     {% set path = '/the-bureau/' %}
     {% set active_page = 'about-rich-cordray' %}
+    {% set cordray = get_document('leadership', 'leaders-cordray') %}
 
     {# Macros #}
 
@@ -37,7 +38,8 @@
 
             <div class="content_main content__flush-bottom content__flush-top-on-small">
                 <section>
-                    About Rich
+                    {{ cordray.name.full }}<br>
+                    {{ cordray.name.informal }}<br>
                 </section>
             </div><!-- END .content_main -->
 
