@@ -1,7 +1,7 @@
 {
-  "leadership": {
-    "url":        "http://127.0.0.1:8000/_content/leadership.json",
-    "processor":  "wordpress_leadership_processor"
+  "static_content": {
+    "url":        "http://127.0.0.1:8000/_static_content/",
+    "processor":  "static_content_processor"
   },
   "contact": {
     "url":        "$WORDPRESS/api/get_posts/?post_type=contact",

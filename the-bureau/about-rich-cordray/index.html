@@ -18,7 +18,9 @@
 
     {% set path = '/the-bureau/' %}
     {% set active_page = 'about-rich-cordray' %}
-    {% set cordray = get_document('leadership', 'leaders-cordray') %}
+    {% set cordray = get_document('static_content', 'leaders-cordray') %}
+    {% set something = get_document('static_content', 'something-else-1') %}
+    {% set something2 = get_document('static_content', 'something-else-2') %}
 
     {# Macros #}
 
@@ -40,6 +42,11 @@
                 <section>
                     {{ cordray.name.full }}<br>
                     {{ cordray.name.informal }}<br>
+                    {{ something.name.full }}<br>
+                    {{ something.name.informal }}<br>
+                    {{ something.content }}<br>
+                    {{ something2.name.full }}<br>
+                    {{ something2.name.informal }}<br>
                 </section>
             </div><!-- END .content_main -->
 

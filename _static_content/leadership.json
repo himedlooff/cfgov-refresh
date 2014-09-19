@@ -1,0 +1,46 @@
+[
+  {
+    "_id": "leaders-cordray",
+    "name": {
+      "full": "Richard Cordray",
+      "informal": "Rich Cordray"
+    },
+    "title": "Director",
+    "bio": {
+      "title": "Director Richard Cordray",
+      "sub_title": "Richard Cordray serves as the first Director of the Consumer Financial Protection Bureau. He previously led the Bureau’s Enforcement Division.",
+      "content": "..."
+    },
+    "speaking_info": {
+      "email": "externalaffairs@cfpb.gov"
+    },
+    "downloads": {
+      "photo": {
+        "hi_res": "/path/to/hi-res/",
+        "lo_res": "/path/to/lo-res/"
+      },
+      "bio": "path/to/bio/"
+    },
+    "more_info": {
+      "title": "More information about director Cordray",
+      "info": [
+        {
+          "title": "Newsroom",
+          "short_desc": "...",
+          "cta": {
+            "link": "/newsroom/",
+            "text": "Read news about the director"
+          }
+        },
+        {
+          "title": "Blogs",
+          "short_desc": "...",
+          "cta": {
+            "link": "/blog/",
+            "text": "Blogs with the director"
+          }
+        }
+      ]
+    }
+  }
+]
